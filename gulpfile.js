@@ -38,9 +38,7 @@ function copy() {
 function templates() {
   return gulp.src('pug/pages/*.pug')
     .pipe(plumber())
-    .pipe(pug({
-      pretty: true
-    }))
+    .pipe(pug())
     .pipe(gulp.dest('build'))
     .pipe(server.reload({
       stream: true
