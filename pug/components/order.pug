@@ -2,36 +2,43 @@ section.order
   h2.order__title
     | Заказать
   p.order__description
-    | Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.
+    | Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены!
+    | Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей —
+    | скидка 10%.
   form.order__form.form-order(action='#' method='post')
     .form-order__row
       .form-order__group
         label(for='name')
           | Представьтесь:
-        | &#x9;
+        |
+        |
         input#name(type='text' name='name')
     .form-order__row
       .form-order__group
         label(for='phone')
           | Номер телефона:
-        | &#x9;
+        |
+        |
         input#phone(type='tel' name='phone')
       .form-order__group
         label(for='second-phone')
           | Доп. номер:
-        | &#x9;
+        |
+        |
         input#second-phone(type='tel' name='second-phone')
     .form-order__row
       .form-order__group
         label(for='email')
           | Email:
-        | &#x9;
+        |
+        |
         input#email(type='email' name='email')
     .form-order__row
       .form-order__group
         label(for='volume')
           | Объём заказа:
-        | &#x9;
+        |
+        |
         br
         select#volume(name='volume')
           option(value='')
@@ -40,12 +47,14 @@ section.order
       .form-order__group
         label(for='comment')
           | Доп. комментарий:
-        | &#x9;
+        |
+        |
         textarea#comment(name='comment')
     .form-order__row
       .form-order__group
         input#subscription(type='checkbox' name='subscription' checked)
-        | &#x9;
+        |
+        |
         label(for='subscription')
           | Я согласен получать квасную рассылку
     button.btn(type='submit')
