@@ -2,8 +2,9 @@
   "extends": "stylelint-config-htmlacademy",
 
   "rules": {
-    "string-quotes": "single",
     "declaration-no-important": true,
-    "indentation": [2, {"ignore": ["inside-parens"]}]
+    "indentation": [2, {"ignore": ["inside-parens"]}],
+    "max-line-length": 80,
+    "string-quotes": "single"
   }
 }
