@@ -1,1 +1,31 @@
-//
+.page-header {
+  padding-top: 60px;
+  padding-bottom: 150px;
+}
+
+.page-header__container {
+  @include container;
+}
+
+.page-header__top {
+  margin-bottom: 120px;
+}
+
+.page-header__logo {
+  float: left;
+  width: 140px;
+  margin-right: 60px;
+}
+
+.page-header__main-nav {
+  float: right;
+  width: 600px;
+  margin-top: 10px;
+}
+
+.page-header__promo {
+  margin: 0;
+
+  font-size: $font-size--xx-large;
+  line-height: $line-height--x-large;
+}
