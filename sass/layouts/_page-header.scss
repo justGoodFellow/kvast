@@ -1,6 +1,14 @@
 .page-header {
   padding-top: 60px;
-  padding-bottom: 150px;
+  padding-bottom: 85px;
+
+  color: white;
+
+  background-color: $color-main--xx-dark;
+  background-image: url('../img/bg-main.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 
 .page-header__container {
@@ -24,8 +32,8 @@
 }
 
 .page-header__promo {
-  margin: 0;
-
+  font-weight: bold;
   font-size: $font-size--xx-large;
   line-height: $line-height--x-large;
+  text-align: center;
 }

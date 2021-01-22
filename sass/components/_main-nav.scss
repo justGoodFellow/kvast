@@ -1,8 +1,8 @@
 .main-nav__list {
   @include list-reset;
 
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(white, 0.2);
+  border-bottom: 1px solid rgba(white, 0.2);
 }
 
 .main-nav__item {
@@ -19,6 +19,24 @@
   padding: 19px 0;
 
   font-weight: bold;
+  color: inherit;
   text-transform: uppercase;
   text-decoration: none;
+
+  outline: none;
+
+  user-select: none;
+
+  &[href] {
+    &:hover,
+    &:focus {
+      color: $color-main;
+
+      box-shadow: 0 1px white;
+    }
+
+    &:active {
+      color: rgba($color-main, 0.3);
+    }
+  }
 }
