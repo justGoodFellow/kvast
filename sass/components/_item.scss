@@ -1,0 +1,36 @@
+.item {
+  float: left;
+  box-sizing: border-box;
+  width: 400px;
+  min-height: 760px;
+  padding-right: 27px;
+  padding-left: 35px;
+}
+
+.item__title {
+  margin-top: 0;
+
+  font-size: $font-size--x-large;
+  line-height: $line-height--large;
+}
+
+.item__row {
+  position: relative;
+
+  min-height: 459px;
+}
+
+.item__composition {
+  float: right;
+  width: 175px;
+}
+
+.item__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 319px;
+  height: 459px;
+}
