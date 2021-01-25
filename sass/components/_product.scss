@@ -1,4 +1,4 @@
-.item {
+.product {
   float: left;
   box-sizing: border-box;
   width: 400px;
@@ -7,25 +7,25 @@
   padding-left: 35px;
 }
 
-.item__title {
+.product__title {
   margin-top: 0;
 
   font-size: $font-size--x-large;
   line-height: $line-height--large;
 }
 
-.item__row {
+.product__row {
   position: relative;
 
   min-height: 459px;
 }
 
-.item__composition {
+.product__composition {
   float: right;
   width: 175px;
 }
 
-.item__image {
+.product__image {
   position: absolute;
   top: 0;
   left: 0;

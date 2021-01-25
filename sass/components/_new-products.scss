@@ -1,13 +1,13 @@
-.new-items {
+.new-products {
   padding-top: 45px;
   padding-bottom: 110px;
 }
 
-.new-items__container {
+.new-products__container {
   @include container;
 }
 
-.new-items__title {
+.new-products__title {
   margin-bottom: 75px;
 
   font-size: $font-size--x-large;
