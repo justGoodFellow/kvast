@@ -9,4 +9,10 @@ body {
 
 p {
   line-height: $line-height;
+  color: $gray--xxx-dark;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
