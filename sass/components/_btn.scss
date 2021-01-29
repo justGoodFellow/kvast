@@ -1,0 +1,122 @@
+.btn {
+  display: inline-block;
+  padding: 14px 20px;
+
+  font-weight: bold;
+  font-size: $font-size;
+  vertical-align: top;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-main--xx-dark;
+  border: 2px solid $color-main--xx-dark;
+
+  user-select: none;
+}
+
+a.btn {
+  &[href] {
+    &:hover,
+    &:focus {
+      background-color: $color-main--xxx-dark;
+      border-color: $color-main--xxx-dark;
+      outline: none;
+    }
+
+    &:active {
+      color: rgba(white, 0.3);
+    }
+  }
+}
+
+button.btn {
+  &:not([disabled]) {
+    &:hover,
+    &:focus {
+      background-color: $color-main--xxx-dark;
+      border-color: $color-main--xxx-dark;
+      outline: none;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: rgba(white, 0.3);
+    }
+  }
+}
+
+.btn--ghost-brown {
+  color: $color-main--xx-dark;
+
+  background-color: transparent;
+}
+
+a.btn--ghost-brown {
+  &[href] {
+    &:hover,
+    &:focus {
+      color: $color-main--xxx-dark;
+
+      background-color: transparent;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+button.btn--ghost-brown {
+  &:not([disabled]) {
+    &:hover,
+    &:focus {
+      color: $color-main--xxx-dark;
+
+      background-color: transparent;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.btn--ghost-gray {
+  color: rgba(black, 0.3);
+
+  background-color: transparent;
+  border-color: $gray;
+}
+
+a.btn--ghost-gray {
+  &[href] {
+    &:hover,
+    &:focus {
+      color: white;
+
+      background-color: $gray;
+      border-color: $gray;
+    }
+
+    &:active {
+      color: rgba(white, 0.3);
+    }
+  }
+}
+
+button.btn--ghost-gray {
+  &:not([disabled]) {
+    &:hover,
+    &:focus {
+      color: white;
+
+      background-color: $gray;
+      border-color: $gray;
+    }
+
+    &:active {
+      color: rgba(white, 0.3);
+    }
+  }
+}
