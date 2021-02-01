@@ -3,6 +3,12 @@
   margin: 0 auto;
 }
 
+@mixin container--big {
+  @include container;
+
+  width: 1015px;
+}
+
 @mixin visually-hidden {
   position: absolute;
 
