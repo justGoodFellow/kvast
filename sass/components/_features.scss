@@ -1,0 +1,43 @@
+.features {
+  padding-top: 80px;
+  padding-bottom: 95px;
+}
+
+.features__container-big {
+  @include container--big;
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__item {
+  float: left;
+  box-sizing: border-box;
+  width: 307px;
+  padding: 0 95px;
+  padding-top: 100px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:nth-child(2) {
+    width: 400px;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.features__title {
+  margin-top: 0;
+
+  font-size: $font-size--large;
+  line-height: $line-height;
+}
+
+.features__description {
+  margin-bottom: 0;
+}
