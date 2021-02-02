@@ -1,6 +1,8 @@
 .features {
   padding-top: 80px;
-  padding-bottom: 95px;
+  padding-bottom: 90px;
+
+  background-color: $color-main;
 }
 
 .features__container-big {
@@ -11,12 +13,13 @@
   @include list-reset;
 }
 
-.features__item {
+.features__feature {
   float: left;
   box-sizing: border-box;
   width: 307px;
   padding: 0 95px;
-  padding-top: 100px;
+
+  border-right: 1px solid $color-main--dark;
 
   &:first-child {
     padding-left: 0;
@@ -28,14 +31,49 @@
 
   &:last-child {
     padding-right: 0;
+
+    border-right: none;
+  }
+
+  &::before {
+    content: '';
+
+    display: block;
+    width: 63px;
+    height: 68px;
+    margin-bottom: 32px;
+
+    background-image: url('../img/icon-thumbsup.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  &--own-production {
+    &::before {
+      background-image: url('../img/icon-brew.png');
+    }
+  }
+
+  &--local {
+    &::before {
+      background-image: url('../img/icon-matreshka.png');
+    }
+  }
+
+  &--quality {
+    &::before {
+      background-image: url('../img/icon-thumbsup.png');
+    }
   }
 }
 
 .features__title {
   margin-top: 0;
+  margin-bottom: 20px;
 
   font-size: $font-size--large;
   line-height: $line-height;
+  text-transform: uppercase;
 }
 
 .features__description {
