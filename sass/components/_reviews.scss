@@ -1,0 +1,42 @@
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+
+.reviews__container {
+  @include container;
+}
+
+.reviews__title {
+  margin-top: 0;
+  margin-bottom: 75px;
+
+  font-size: $font-size--x-large;
+  line-height: $line-height--large;
+}
+
+.item-reviews {
+  margin: 0;
+}
+
+.item-reviews__quote {
+  margin-right: 110px;
+  margin-bottom: 35px;
+}
+
+.item-reviews__cite {
+  float: right;
+  max-width: 600px;
+  margin-top: 10px;
+
+  font-weight: bold;
+  font-size: $font-size--large;
+  line-height: $line-height;
+  text-align: right;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.item-reviews__btn {
+  float: left;
+}
