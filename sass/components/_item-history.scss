@@ -6,9 +6,11 @@
   display: inline-block;
   width: 600px;
 
+  font-weight: bold;
   font-size: $font-size--large;
   line-height: $line-height;
   vertical-align: top;
+  text-transform: uppercase;
 }
 
 .item-history__source {
@@ -19,6 +21,22 @@
   line-height: $line-height;
   vertical-align: top;
   text-align: right;
+  color: $gray-68;
+}
+
+.item-history__source-link {
+  &[href] {
+    color: $color-main--xx-dark;
+
+    &:hover,
+    &:focus {
+      color: $color-main--xxx-dark;
+    }
+
+    &:active {
+      color: #c9b7a1;
+    }
+  }
 }
 
 .item-history__details {
