@@ -1,0 +1,45 @@
+.item-history__term {
+  margin-bottom: 20px;
+}
+
+.item-history__title {
+  display: inline-block;
+  width: 600px;
+
+  font-size: $font-size--large;
+  line-height: $line-height;
+  vertical-align: top;
+}
+
+.item-history__source {
+  display: inline-block;
+  width: 200px;
+
+  font-size: $font-size;
+  line-height: $line-height;
+  vertical-align: top;
+  text-align: right;
+}
+
+.item-history__details {
+  margin: 0;
+}
+
+.item-history__image {
+  float: right;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.item-history__image img {
+  display: block;
+  width: 200px;
+  height: 101px;
+}
+
+.item-history__description {
+  box-sizing: border-box;
+  width: 600px;
+  margin-bottom: 0;
+  padding-right: 110px;
+}

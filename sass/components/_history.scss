@@ -1,0 +1,24 @@
+.history {
+  padding-top: 80px;
+  padding-bottom: 65px;
+}
+
+.history__container {
+  @include container;
+}
+
+.history__title {
+  margin-top: 0;
+  margin-bottom: 60px;
+
+  font-size: $font-size--x-large;
+  line-height: $line-height--large;
+}
+
+.history__item {
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
