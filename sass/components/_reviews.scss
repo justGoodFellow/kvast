@@ -1,6 +1,8 @@
 .reviews {
   padding-top: 80px;
   padding-bottom: 90px;
+
+  background-color: $color-main--x-light;
 }
 
 .reviews__container {
@@ -13,6 +15,25 @@
 
   font-size: $font-size--x-large;
   line-height: $line-height--large;
+  text-transform: uppercase;
+}
+
+.reviews__item {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -106px;
+
+    width: 41px;
+    height: 31px;
+
+    background-image: url('../img/icon-quotes.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .item-reviews {
