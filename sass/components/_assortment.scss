@@ -1,0 +1,52 @@
+.assortment {
+  padding: 90px 0;
+}
+
+.assortment__container {
+  @include container;
+}
+
+.assortment__title {
+  margin-top: 0;
+  margin-bottom: 70px;
+
+  font-size: $font-size--x-large;
+  line-height: $line-height--large;
+}
+
+.assortment__table {
+  margin-bottom: 7px;
+}
+
+.table-assortment {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.table-assortment tr {
+  border-bottom: 1px solid black;
+
+  th,
+  td {
+    box-sizing: border-box;
+    padding: 17px 0;
+
+    &:first-child {
+      width: 400px;
+    }
+
+    &:last-child {
+      //
+    }
+  }
+}
+
+.table-assortment th {
+  font-size: $font-size--x-small;
+  line-height: $line-height;
+}
+
+.table-assortment td {
+  line-height: $line-height;
+}
