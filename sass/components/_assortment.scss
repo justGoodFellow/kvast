@@ -1,5 +1,6 @@
 .assortment {
-  padding: 90px 0;
+  padding-top: 90px;
+  padding-bottom: 85px;
 }
 
 .assortment__container {
@@ -8,45 +9,79 @@
 
 .assortment__title {
   margin-top: 0;
-  margin-bottom: 70px;
+  margin-bottom: 75px;
 
   font-size: $font-size--x-large;
   line-height: $line-height--large;
-}
-
-.assortment__table {
-  margin-bottom: 7px;
+  text-transform: uppercase;
 }
 
 .table-assortment {
   width: 100%;
 
   border-collapse: collapse;
+  text-transform: uppercase;
 }
 
 .table-assortment tr {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $gray--x-light;
+}
 
-  th,
-  td {
-    box-sizing: border-box;
-    padding: 17px 0;
+.table-assortment th,
+.table-assortment td {
+  box-sizing: border-box;
+  padding: 17px 0;
 
-    &:first-child {
-      width: 400px;
-    }
+  text-align: left;
 
-    &:last-child {
-      //
-    }
+  &:first-child {
+    width: 400px;
+  }
+
+  &:last-child {
+    text-align: right;
   }
 }
 
 .table-assortment th {
+  padding-top: 5px;
+  padding-bottom: 29px;
+
+  font-weight: normal;
   font-size: $font-size--x-small;
   line-height: $line-height;
+  color: $gray--x-dark;
 }
 
 .table-assortment td {
   line-height: $line-height;
+  color: $gray--xxx-dark;
+
+  &:first-child {
+    font-weight: bold;
+  }
+}
+
+.table-assortment__alcohol {
+  width: 95px;
+}
+
+.table-assortment__calories {
+  width: 60px;
+}
+
+.table-assortment__volume {
+  width: 95px;
+}
+
+.table-assortment__flag {
+  margin-left: 20px;
+  padding: 2px 5px;
+
+  font-size: $font-size--xx-small;
+  line-height: $line-height;
+  color: white;
+
+  background-color: black;
+  border-radius: 2px;
 }
