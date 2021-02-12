@@ -1,0 +1,28 @@
+.field-group {
+  font-size: $font-size;
+  line-height: $line-height--x-small;
+}
+
+.field-group br {
+  display: none;
+}
+
+.field-group__label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field-group__field {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 25px;
+
+  font: inherit;
+}
+
+textarea.field-group__field {
+  min-height: 120px;
+
+  resize: none;
+}

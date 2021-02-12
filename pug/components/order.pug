@@ -1,61 +1,69 @@
 section.order
-  h2.order__title
-    | Заказать
-  p.order__description
-    | Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены!
-    | Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей —
-    | скидка 10%.
-  form.order__form.form-order(action='#' method='post')
-    .form-order__row
-      .form-order__group
-        label(for='name')
-          | Представьтесь:
-        |
-        |
-        input#name(type='text' name='name')
-    .form-order__row
-      .form-order__group
-        label(for='phone')
-          | Номер телефона:
-        |
-        |
-        input#phone(type='tel' name='phone')
-      .form-order__group
-        label(for='second-phone')
-          | Доп. номер:
-        |
-        |
-        input#second-phone(type='tel' name='second-phone')
-    .form-order__row
-      .form-order__group
-        label(for='email')
-          | Email:
-        |
-        |
-        input#email(type='email' name='email')
-    .form-order__row
-      .form-order__group
-        label(for='volume')
-          | Объём заказа:
-        |
-        |
-        br
-        select#volume(name='volume')
-          option(value='')
-            | От 5 до 10 баррелей в неделю
-    .form-order__row
-      .form-order__group
-        label(for='comment')
-          | Доп. комментарий:
-        |
-        |
-        textarea#comment(name='comment')
-    .form-order__row
-      .form-order__group
-        input#subscription(type='checkbox' name='subscription' checked)
-        |
-        |
-        label(for='subscription')
-          | Я согласен получать квасную рассылку
-    button.btn(type='submit')
-      | Отправить заказ
+  .order__container
+    h2.order__title
+      | Заказать
+    p.order__description
+      | Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены!
+      | Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей —
+      | скидка 10%.
+    form.order__form.form-order(action='#' method='post')
+      .form-order__row
+        .field-group
+          label.field-group__label(for='name')
+            | Представьтесь:
+          |
+          |
+          input#name.field-group__field(type='text' name='name')
+      .form-order__row.clearfix
+        .form-order__col.form-order__col--left
+          .field-group
+            label.field-group__label(for='phone')
+              | Номер телефона:
+            |
+            |
+            input#phone.field-group__field(type='tel' name='phone')
+        .form-order__col.form-order__col--right
+          .field-group
+            label.field-group__label(for='second-phone')
+              | Доп. номер:
+            |
+            |
+            input#second-phone.field-group__field(
+              type='tel'
+              name='second-phone')
+      .form-order__row
+        .field-group
+          label.field-group__label(for='email')
+            | Email:
+          |
+          |
+          input#email.field-group__field(type='email' name='email')
+      .form-order__row
+        .field-group
+          label.field-group__label(for='volume')
+            | Объём заказа:
+          |
+          |
+          br
+          select#volume(name='volume')
+            option(value='')
+              | От 5 до 10 баррелей в неделю
+      .form-order__row
+        .field-group
+          label.field-group__label(for='comment')
+            | Доп. комментарий:
+          |
+          |
+          textarea#comment.field-group__field(name='comment')
+      .form-order__row.form-order__row--checkbox
+        .field-group.checkbox-group
+          input#subscription.checkbox-group__checkbox(
+            type='checkbox'
+            name='subscription'
+            checked)
+          |
+          |
+          label.checkbox-group__label(for='subscription')
+            | Я согласен получать квасную рассылку
+      button.btn(type='submit')
+        | Отправить заказ

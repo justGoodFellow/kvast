@@ -1,0 +1,46 @@
+.order {
+  padding-top: 80px;
+  padding-bottom: 110px;
+}
+
+.order__container {
+  @include container;
+}
+
+.order__title {
+  margin-top: 0;
+  margin-bottom: 75px;
+
+  font-size: $font-size--x-large;
+  line-height: $line-height--large;
+}
+
+.order__description {
+  margin-right: 140px;
+  margin-bottom: 70px;
+}
+
+.order__form {
+  margin-right: 170px;
+}
+
+.form-order__row {
+  margin-bottom: 25px;
+
+  &--checkbox {
+    margin-bottom: 45px;
+    padding-top: 20px;
+  }
+}
+
+.form-order__col {
+  width: 290px;
+
+  &--left {
+    float: left;
+  }
+
+  &--right {
+    float: right;
+  }
+}
