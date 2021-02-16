@@ -1,3 +1,9 @@
+.checkbox-group__label {
+  @include label;
+
+  display: inline-block;
+}
+
 .checkbox-group__checkbox {
   margin-right: 15px;
 }

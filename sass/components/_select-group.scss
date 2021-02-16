@@ -1,0 +1,7 @@
+.select-group__label {
+  @include label;
+}
+
+.select-group br {
+  display: none;
+}

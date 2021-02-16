@@ -1,6 +1,8 @@
 .order {
   padding-top: 80px;
   padding-bottom: 110px;
+
+  background-color: $color-main;
 }
 
 .order__container {
@@ -13,6 +15,7 @@
 
   font-size: $font-size--x-large;
   line-height: $line-height--large;
+  text-transform: uppercase;
 }
 
 .order__description {

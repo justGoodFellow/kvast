@@ -3,13 +3,26 @@
   line-height: $line-height--x-small;
 }
 
-.field-group br {
-  display: none;
+.field-group__label {
+  @include label;
 }
 
-.field-group__label {
-  display: block;
-  margin-bottom: 10px;
+.field-group__field,
+textarea.field-group__field {
+  &:not([disabled]) {
+    &:hover {
+      background-color: rgba(black, 0.15);
+    }
+
+    &:focus {
+      background-color: white;
+      outline: none;
+    }
+  }
+
+  &::placeholder {
+    color: rgba(black, 0.3);
+  }
 }
 
 .field-group__field {
@@ -19,6 +32,12 @@
   padding: 15px 25px;
 
   font: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: rgba(black, 0.1);
+  border: none;
+  border-radius: unset;
 }
 
 textarea.field-group__field {
