@@ -40,3 +40,26 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+@mixin box-link {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+
+  background-color: $gray-27;
+  border: 1px solid rgba($color-main, 0.1);
+
+  &[href] {
+    &:hover,
+    &:focus {
+      border-color: rgba($color-main, 0.3);
+      outline: none;
+    }
+
+    &:active {
+      border-color: rgba($color-main, 0.2);
+      opacity: 0.5;
+    }
+  }
+}
