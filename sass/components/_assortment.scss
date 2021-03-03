@@ -24,7 +24,7 @@
 }
 
 .table-assortment tr {
-  border-bottom: 1px solid $gray--x-light;
+  border-bottom: 1px solid $gray--xx-light;
 }
 
 .table-assortment th,
@@ -50,12 +50,12 @@
   font-weight: normal;
   font-size: $font-size--x-small;
   line-height: $line-height;
-  color: $gray--x-dark;
+  color: $gray--x-light;
 }
 
 .table-assortment td {
   line-height: $line-height;
-  color: $gray--xxx-dark;
+  color: $gray--xx-dark;
 
   &:first-child {
     font-weight: bold;

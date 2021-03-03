@@ -11,8 +11,8 @@
 
   vertical-align: top;
 
-  border-right: 1px solid $gray--x-light;
-  border-left: 1px solid $gray--x-light;
+  border-right: 1px solid $gray--xx-light;
+  border-left: 1px solid $gray--xx-light;
 
   &:nth-child(even) {
     border-left: none;
@@ -50,7 +50,7 @@
 .product__composition td {
   padding: 11px 10px;
 
-  border: 1px solid $gray--x-light;
+  border: 1px solid $gray--xx-light;
 }
 
 .product__composition p {

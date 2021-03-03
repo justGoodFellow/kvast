@@ -86,7 +86,7 @@ button.btn--ghost-brown {
   color: rgba(black, 0.3);
 
   background-color: transparent;
-  border-color: $gray;
+  border-color: $dawn;
 }
 
 a.btn--ghost-gray {
@@ -95,8 +95,8 @@ a.btn--ghost-gray {
     &:focus {
       color: white;
 
-      background-color: $gray;
-      border-color: $gray;
+      background-color: $dawn;
+      border-color: $dawn;
     }
 
     &:active {
@@ -111,8 +111,8 @@ button.btn--ghost-gray {
     &:focus {
       color: white;
 
-      background-color: $gray;
-      border-color: $gray;
+      background-color: $dawn;
+      border-color: $dawn;
     }
 
     &:active {
