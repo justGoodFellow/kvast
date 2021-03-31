@@ -32,7 +32,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^9.8.6",
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "css-mqpacker": "^7.0.0",
     "del": "^3.0.0",
     "editorconfig-tools": "^0.1.1",
