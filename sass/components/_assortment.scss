@@ -33,14 +33,6 @@
   padding: 17px 0;
 
   text-align: left;
-
-  &:first-child {
-    width: 400px;
-  }
-
-  &:last-child {
-    text-align: right;
-  }
 }
 
 .table-assortment th {
@@ -60,6 +52,16 @@
   &:first-child {
     font-weight: bold;
   }
+}
+
+.table-assortment th:first-child,
+.table-assortment td:first-child {
+  width: 400px;
+}
+
+.table-assortment th:last-child,
+.table-assortment td:last-child {
+  text-align: right;
 }
 
 .table-assortment__alcohol {

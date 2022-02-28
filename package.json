@@ -10,7 +10,7 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "pug-lint": "pug-lint pug/**/*.pug",
-    "stylelint": "stylelint \"sass/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"sass/**/*.scss\"",
     "test": "npm run editorconfig && npm run pug-lint && npm run stylelint",
     "build": "gulp",
     "start": "gulp && gulp serve"
@@ -50,10 +50,11 @@
     "gulp-sass": "^4.1.1",
     "gulp-svgmin": "^2.2.0",
     "gulp-svgstore": "^7.0.1",
+    "postcss": "^8.4.6",
     "postcss-object-fit-images": "^1.1.2",
     "pug-lint": "^2.6.0",
-    "stylelint": "^9.10.1",
-    "stylelint-config-htmlacademy": "^0.1.12"
+    "stylelint": "^14.5.3",
+    "stylelint-config-standard-scss": "^2.0.1"
   },
   "dependencies": {}
 }
