@@ -41,6 +41,7 @@
 .page-footer__social-link {
   @include box-link;
 
+  background-image: url('../img/sprite.png');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -49,15 +50,15 @@
   }
 
   &--in {
-    background-image: url('../img/icon-instagram.png');
+    background-position: 22px -164px;
   }
 
   &--fb {
-    background-image: url('../img/icon-facebook.png');
+    background-position: 25px -84px;
   }
 
   &--vk {
-    background-image: url('../img/icon-vk.png');
+    background-position: 19px -428px;
   }
 }
 

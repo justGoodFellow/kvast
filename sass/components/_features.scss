@@ -43,26 +43,25 @@
     height: 68px;
     margin-bottom: 32px;
 
-    background-image: url('../img/icon-thumbsup.png');
+    background-image: url('../img/sprite.png');
     background-repeat: no-repeat;
-    background-position: left top;
   }
 
   &--own-production {
     &::before {
-      background-image: url('../img/icon-brew.png');
+      background-position: -5px -5px;
     }
   }
 
   &--local {
     &::before {
-      background-image: url('../img/icon-matreshka.png');
+      background-position: -5px -243px;
     }
   }
 
   &--quality {
     &::before {
-      background-image: url('../img/icon-thumbsup.png');
+      background-position: -5px -359px;
     }
   }
 }
